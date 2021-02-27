@@ -168,5 +168,12 @@ upper = planets.map((planet) => {
     contains planets with the letter 'e'. Use the `includes()`
     method on strings.
 
+    
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 */
+
+const ePlanets = planets.filter((planet) => {
+  return planet.includes('e');
+});
+
+// console.log(ePlanets);
