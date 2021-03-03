@@ -243,11 +243,11 @@ let customers = [
   }
 ];
 
+let emailsArray = [];
 const emails = customers.forEach(customer => {
-  customer.contacts.email.map(email => {
-    return email;
+  customer.contacts.email.forEach(item => {
+    emailsArray.push(item);
   })
 });
 
-
-console.log(emails);
+console.log(emailsArray);
